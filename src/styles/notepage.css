@@ -1,0 +1,102 @@
+.notes-area {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100vw;
+    position: absolute;
+    /* height: 570px; */
+    gap: 10px;
+    margin-top: 5px;
+    background-color: purple;
+    left: 0;
+    flex-wrap: wrap;
+}
+
+.note-button {
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 300px;
+    width: 380px;
+    user-select: none;
+    cursor: pointer;
+    margin-top: 50px;
+    background-color: white;
+    border-radius: 5px;
+    color: purple;
+
+  }
+
+  .note-button > img {
+    height: 150px;
+    width: 160px;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    gap: 200px;
+  }
+
+  .header > div {
+    display: flex;
+    flex-wrap: row;
+    gap: 15px;
+  }
+
+  .header > div > div {
+    cursor: pointer;
+    user-select: none;
+    height: 40px;
+    width: 90px;
+    background-color: purple;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.note-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    position: absolute;
+    /* height: 570px; */
+    /* gap: 10px; */
+    margin-top: 5px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background-color: purple;
+    left: 0;
+    flex-wrap: wrap;
+    width: 95vw;
+    border-radius: 5px;
+    margin-left: 2.5vw;
+}
+
+.title-area {
+    width: 90vw;
+    height: 50px;
+    font-size: 32px;
+    outline: none;
+    font-family: poppins;
+    font-weight: 700;
+    text-align: center;
+}
+
+.text-area {
+    font-size: 28px;
+    width: 90vw;
+    resize: none;
+    height: 400px;
+    font-family: poppins;
+    margin-top: -25px;
+    outline: none;
+}

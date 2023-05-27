@@ -1,0 +1,56 @@
+.resources {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100vw;
+    position: absolute;
+    height: 578px;
+    gap: 20px;
+    margin-top: -90px;
+    background-color: purple;
+    left: 0;
+  }
+  
+  .resources > div {
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 300px;
+    width: 300px;
+    user-select: none;
+    cursor: pointer;
+    margin-top: 150px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: white;
+    color: black;
+}
+
+.resources > div:hover {
+      background-color: black;
+      color: white;
+  }
+  
+  .resources > div > img {
+    height: 150px;
+    width: 160px;
+  }
+
+.name {
+    position: relative;
+    text-align: center;
+    top: 30px;
+    z-index: 5;
+    /* background-color: black; */
+    color: green;
+}
+
+.questions-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}

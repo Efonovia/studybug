@@ -1,0 +1,40 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 80px;
+  gap: 50px;
+  display: flex;
+  flex-direction: row;
+  color: rgb(194, 3, 194);
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0px 4px 8px grey;
+  z-index: 10;
+}
+
+.auth {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.auth > div {
+  cursor: pointer;
+  user-select: none;
+  height: 40px;
+  width: 90px;
+  background-color: purple;
+  color: white;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  font-family: poppins;
+}

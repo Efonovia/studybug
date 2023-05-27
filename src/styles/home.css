@@ -1,0 +1,79 @@
+main {
+    background-image: url("../images/home.gif");
+    background-size: cover;
+    width: 100vw;
+    height: calc(100vh - 80px);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 80px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+main > h2 {
+    color: white;
+    font-size: 40px;
+    width: 600px;
+    text-align: center;
+}
+
+main > div {
+    height: 60px;
+    width: 300px;
+    font-size: 22px;
+    background-color: purple;
+    color: white;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+}
+
+.features {
+    position: absolute;
+    width: 99vw;
+    top: 100vh;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 200px;
+}
+
+.feature-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.feature-description >p {
+    width: 400px;
+    text-align: center;
+    font-size: 24px;
+    margin-top: -20px;
+}
+
+.feature-description > h3 {
+    text-align: center;
+    font-size: 34px;
+}
+
+body {
+    overflow-x: hidden;
+
+}

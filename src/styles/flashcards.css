@@ -1,0 +1,196 @@
+.flashcards-area {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    width: 100vw;
+    position: absolute;
+    min-height: 538px;
+    /* gap: 10px; */
+    margin-top: -15px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background-color: purple;
+    left: 0;
+    flex-wrap: wrap;
+}
+
+.flashcard-button {
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 300px;
+    width: 380px;
+    user-select: none;
+    cursor: pointer;
+    margin-top: 50px;
+    background-color: white;
+    border-radius: 5px;
+    margin-left: 30px;
+  }
+
+  .flashcard-button > img {
+    height: 120px;
+    width: 120px;
+    margin-top: 20px;
+  }
+
+  .flashcard-tools {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.flashcard-button>p {
+    margin-top: -10px;
+}
+
+.flashcards-header {
+    padding: 10px;
+    color: white;
+    display: flex;
+    gap: 60px;
+    flex-direction: row;
+    width: 50vw;
+    justify-content: center;
+    align-items: center;
+    margin-left: 300px;
+  }
+
+.flashcards-header > div {
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    padding: 10px;
+    background-color: purple;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    gap: 60px;
+    flex-direction: row;
+    width: 50vw;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.8;
+    margin-bottom: 20px;
+  }
+.flashcards-header > div:hover {
+    opacity: 1;
+}
+
+.flashcard-creation-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.flashcard-creator {
+    height: 200px;
+    margin-top: 10px;
+    width: 90vw;
+    border-radius: 10px;
+    background-color: purple;
+}
+
+.flashcard-view-area {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: -40px;
+}
+
+.nav-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 150px;
+  margin-top: -20px;
+}
+
+.card {
+  /* background-color: purple; */
+  color: white;
+  height: 300px;
+  width: 600px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  margin-top: 10px;
+  /* position: absolute; */
+  perspective: 1000px;
+}
+
+.content {
+  /* position: absolute; */
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+
+  transition: transform 2s;
+  transform-style: preserve-3d;
+}
+.regular {
+  /* position: absolute; */
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.card .content {
+  transform: rotateY( 180deg ) ;
+  transition: transform 2s;
+}
+
+.front,
+.back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: purple;
+  color: white;
+  text-align: center;
+  font-size: 60px;
+  border-radius: 5px;
+  -webkit-backface-visibility: hidden;
+}
+
+.back {
+  background: rgb(69, 69, 255);
+  color: white;
+  transform: rotateY( 180deg );
+}
+.hide-reveal {
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border-radius: 3px;
+  user-select: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.feedback {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.feedback > div {
+  padding: 5px 20px;
+  background-color: purple;
+  color: white;
+  border-radius: 3px;
+  user-select: none;
+  cursor: pointer;
+  /* margin-top: 10px; */
+}

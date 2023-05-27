@@ -1,0 +1,51 @@
+/* body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} */
+
+.problem {
+    margin-left: 40px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+    flex-direction: column;
+}
+
+.h1 {
+    color: purple;
+    text-align: center;
+}
+
+.login-button {
+    height: 50px;
+    width: 410px;
+    font-size: 15px;
+    background-color: rgba(95, 0, 95, 0.519);
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: purple;
+}
+
+.signup-area {
+    margin-top: 200px;
+    /* margin-left: 400px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
