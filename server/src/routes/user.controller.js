@@ -83,7 +83,7 @@ export const createNewUser = async (req, res) => {
       }
     })
     .catch((error) => {
-      console.log(`Error finding user with email ${userEmail}: ${error}`);
+      console.log(`Error finding user with email ${email}: ${error}`);
       return res.status(500).json({error: error.message})
     });
 
