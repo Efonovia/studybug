@@ -159,7 +159,7 @@
   text-align: center;
   font-size: 60px;
   border-radius: 5px;
-  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .back {

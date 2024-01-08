@@ -1,6 +1,6 @@
 import React from "react";
-import { auth } from "../utils/firebase";
-import { useAuthState } from "react-firebase-hooks/auth";
+// import { auth } from "../utils/firebase";
+// import { useAuthState } from "react-firebase-hooks/auth";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import StudySession from "../components/StudySession";
@@ -35,7 +35,7 @@ export default function Dashboard() {
   };
   const navigate = useNavigate();
   const dispatch = useDispatch()
-  const [user] = useAuthState(auth);
+  // const [user] = useAuthState(auth);
   let userInfo = useSelector((state) => state.user)
 
   React.useEffect(() => {

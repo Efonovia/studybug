@@ -1,6 +1,6 @@
 import { nanoid } from "@reduxjs/toolkit";
 import React from "react";
-import { httpAddQuestion } from "../../hooks/requests.hooks";
+// import { httpAddQuestion } from "../../hooks/requests.hooks";
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import { IconButton, Radio, Tooltip } from "@mui/material";
@@ -9,8 +9,8 @@ import DeleteIcon from '@mui/icons-material/Delete';
 
 
 function QuestionCreator(props) {
-  const questionId = nanoid()
-  const { index, submitData } = props;
+  // const questionId = nanoid()
+  const { index } = props;
   const [optionsAmount, setOptionsAmount] = React.useState(4);
   const [questionPrompt, setQuestionPrompt] = React.useState("");
   const [options, setOptions] = React.useState([

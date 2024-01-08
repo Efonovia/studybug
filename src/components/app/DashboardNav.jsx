@@ -8,7 +8,7 @@ import Avatar from '@mui/material/Avatar';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import { auth } from "../../utils/firebase";
-import sessionLogo from "../../images/studysession.png"
+// import sessionLogo from "../../images/studysession.png"
 import logo from "../../images/logo.svg"
 import pfp from "../../images/avatar.png"
 

@@ -1,10 +1,10 @@
 import React from "react";
 import QuestionCreator from "../../../components/quizes/QuestionCreator";
 import { nanoid } from "@reduxjs/toolkit";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
-import { getUser, httpCreateQuiz } from "../../../hooks/requests.hooks";
-import { setUser } from "../../../state/state";
+// import { getUser, httpCreateQuiz } from "../../../hooks/requests.hooks";
+// import { setUser } from "../../../state/state";
 import DashboardNav from "../../../components/app/DashboardNav";
 import AddIcon from '@mui/icons-material/Add';
 import DeleteIcon from '@mui/icons-material/Delete';
@@ -14,10 +14,10 @@ function QuizCreationPage() {
     const [name, setName] = React.useState("")
     const [questionsAmount, setQuestionsAmount] = React.useState(5)
     const [shouldSubmit, setShouldSubmit] = React.useState(false)
-    const [collectedData, setCollectedData] = React.useState([]);
+    // const [collectedData, setCollectedData] = React.useState([]);
     const userInfo = useSelector(state => state.user)
     const sessionId = useParams().sessionId
-    const dispatch = useDispatch()
+    // const dispatch = useDispatch()
     const navigate = useNavigate()
     const quizId = nanoid()
     const questionCreatorsElements = Array.from({ length: questionsAmount }, (_, i) => (

@@ -4,7 +4,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { getUser, httpAddCardStat } from "../../../hooks/requests.hooks";
 import { setUser } from "../../../state/state";
 import CardView from "../../../components/flashcards/CardView";
-import Box from '@mui/material/Box';
+// import Box from '@mui/material/Box';
 import Backdrop from '@mui/material/Backdrop';
 import CircularProgress from '@mui/material/CircularProgress';
 import DashboardNav from "../../../components/app/DashboardNav";
@@ -25,7 +25,7 @@ function FlashCardsSetPageArea() {
           setLoading(true)
         }
         fetchData();
-    }, []);
+    });
 
 
     console.log("sessionTime: ", sessionTime)
