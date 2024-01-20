@@ -32,10 +32,7 @@ app.post("/deleteuser/:id", deleteUser)
 
 //MONGOOSE SETUP
 const PORT = process.env.PORT || 6001
-mongoose.connect(process.env.MONGO_URL, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-}).then(() => app.listen(PORT, () => {
+mongoose.connect(process.env.MONGO_URL).then(() => app.listen(PORT, () => {
     console.log("Connected to mongo database")
     console.log('Server running at PORT: '+PORT)
 }))
