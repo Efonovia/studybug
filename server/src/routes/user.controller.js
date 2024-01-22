@@ -103,7 +103,7 @@ export const deleteUser = async (req, res) => {
       console.log(error);
     });
 
-    return res.status(201).json(UserDatabase)
+    return res.status(201).json({ok: true, message: "user deleted successfully"})
 } catch (error) {
     console.log(error)
     return res.status(404).json({error: error.message})
