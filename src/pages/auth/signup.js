@@ -17,7 +17,6 @@ import CircularProgress from '@mui/material/CircularProgress';
 import logo from "../../images/logo.svg"
 import Navbar from "../../components/app/Navbar";
 
-
 function Signup() {
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => {
